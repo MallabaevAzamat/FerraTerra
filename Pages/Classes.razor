@@ -13,7 +13,12 @@
         @foreach (var name in classes.Names)
         {
             <a href="/class/@name">
-                @(Task<string>.Run(Http.GetFromJsonAsync<Class>($"classes/{name}.json").ContinueWith<string>(class_ => class_ != null ? class_.Name : "")).Result)
+                @{
+                    Class? class_ = await Http.GetFromJsonAsync<Class>($"classes/{name}.json");
+                }
+                @if (class_ != null) {
+                    @class_?.Name
+                }
             </a>
         }
     </ul>
