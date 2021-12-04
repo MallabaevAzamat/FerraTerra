@@ -13,7 +13,7 @@
         @foreach (var name in races.Names)
         {
             <a href="/race/@name">
-                @(Task<string>.Run(Http.GetFromJsonAsync<Race>($"races/{name}.json").ContinueWith<string>(race => race.Name)).Result)
+                @(Task<string>.Run(Http.GetFromJsonAsync<Race>($"races/{name}.json").ContinueWith<string>(race => race != null ? race.Name : "")).Result)
             </a>
         }
     </ul>
