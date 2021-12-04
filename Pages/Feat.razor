@@ -1,0 +1,24 @@
+@page "/feat/{id}"
+@inject HttpClient Http
+
+@if (feat != null) {
+    <PageTitle>@feat.Name</PageTitle>
+    <h1>@feat.Name</h1>
+    <section>
+        @feat.Text
+    </section>
+}
+
+@code{
+    [Parameter]
+    public string Id { get; set; }
+
+    private Feat? feat;
+
+    protected override async Task OnInitializedAsync()
+    {
+        feat = await Http.GetFromJsonAsync<Race>($"feats/{Id}.json");
+    }
+
+    public record Feat(string Name, string Text);
+}

@@ -1,0 +1,24 @@
+@page "/race/{id}"
+@inject HttpClient Http
+
+@if (race != null) {
+    <PageTitle>@race.Name</PageTitle>
+    <h1>@race.Name</h1>
+    <section>
+        @race.Text
+    </section>
+}
+
+@code{
+    [Parameter]
+    public string Id { get; set; }
+
+    private Race? race;
+
+    protected override async Task OnInitializedAsync()
+    {
+        race = await Http.GetFromJsonAsync<Race>($"races/{Id}.json");
+    }
+
+    public record Race(string Name, string Text);
+}

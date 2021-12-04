@@ -1,0 +1,32 @@
+@page "/races"
+@inject HttpClient Http
+
+<PageTitle>Черты - FerraTerra</PageTitle>
+
+<h1>Черты - FerraTerra</h1>
+
+@if(feats != null) {
+    <section>
+        @feats.Text
+    </section>
+    <ul>
+        @foreach (var name in feats.Names)
+        {
+            <a href="/feat/@name">
+                @(Http.GetFromJsonAsync<Race>($"feats/{name}.json").Name)
+            </a>
+        }
+    </ul>
+}
+
+@code{
+    private Feats? feats;
+
+    protected override async Task OnInitializedAsync()
+    {
+        feats = await Http.GetFromJsonAsync<Feats>("feats.json");
+    }
+
+    public record Feats(string Text, string[] Names);
+    public record Feat(string Name);
+}
