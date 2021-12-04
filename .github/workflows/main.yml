@@ -28,3 +28,7 @@ jobs:
       with:
         branch: gh-pages
         folder: release/wwwroot
+
+      # меняем '/' на '/FerraTerra/'
+    - name: Change base-tag in index.html from / to FerraTerra
+      run: sed -i 's/<base href="\/" \/>/<base href="\/FerraTerra\/" \/>/g' release/wwwroot/index.html
