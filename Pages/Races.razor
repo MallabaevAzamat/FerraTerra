@@ -20,13 +20,13 @@
 }
 
 @code{
-    private Races? races;
+    private RacesData? races;
 
     protected override async Task OnInitializedAsync()
     {
-        races = await Http.GetFromJsonAsync<Races>("races.json");
+        races = await Http.GetFromJsonAsync<RacesData>("races.json");
     }
 
-    public record Races(string Text, string[] Names);
+    public record RacesData(string Text, string[] Names);
     public record Race(string Name);
 }

@@ -1,4 +1,4 @@
-@page "/races"
+@page "/feats"
 @inject HttpClient Http
 
 <PageTitle>Черты - FerraTerra</PageTitle>
@@ -13,20 +13,20 @@
         @foreach (var name in feats.Names)
         {
             <a href="/feat/@name">
-                @(Http.GetFromJsonAsync<Race>($"feats/{name}.json").Name)
+                @(Http.GetFromJsonAsync<Feat>($"feats/{name}.json").Name)
             </a>
         }
     </ul>
 }
 
 @code{
-    private Feats? feats;
+    private FeatsData? feats;
 
     protected override async Task OnInitializedAsync()
     {
-        feats = await Http.GetFromJsonAsync<Feats>("feats.json");
+        feats = await Http.GetFromJsonAsync<FeatsData>("feats.json");
     }
 
-    public record Feats(string Text, string[] Names);
+    public record FeatsData(string Text, string[] Names);
     public record Feat(string Name);
 }

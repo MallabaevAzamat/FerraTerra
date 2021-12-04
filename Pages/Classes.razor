@@ -1,0 +1,32 @@
+@page "/classes"
+@inject HttpClient Http
+
+<PageTitle>Классы - FerraTerra</PageTitle>
+
+<h1>Классы - FerraTerra</h1>
+
+@if(classes != null) {
+    <section>
+        @classes.Text
+    </section>
+    <ul>
+        @foreach (var name in classes.Names)
+        {
+            <a href="/class/@name">
+                @(Http.GetFromJsonAsync<Class>($"classes/{name}.json").Name)
+            </a>
+        }
+    </ul>
+}
+
+@code{
+    private ClassesData? classes;
+
+    protected override async Task OnInitializedAsync()
+    {
+        classes = await Http.GetFromJsonAsync<ClassesData>("classes.json");
+    }
+
+    public record ClassesData(string Text, string[] Names);
+    public record Class(string Name);
+}

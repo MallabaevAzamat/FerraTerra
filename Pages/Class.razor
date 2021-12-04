@@ -13,12 +13,12 @@
     [Parameter]
     public string Id { get; set; }
 
-    private Class? class_;
+    private ClassData? class_;
 
     protected override async Task OnInitializedAsync()
     {
-        class_ = await Http.GetFromJsonAsync<Race>($"classes/{Id}.json");
+        class_ = await Http.GetFromJsonAsync<ClassData>($"classes/{Id}.json");
     }
 
-    public record Class(string Name, string Text);
+    public record ClassData(string Name, string Text);
 }

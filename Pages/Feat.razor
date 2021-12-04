@@ -13,12 +13,12 @@
     [Parameter]
     public string Id { get; set; }
 
-    private Feat? feat;
+    private FeatData? feat;
 
     protected override async Task OnInitializedAsync()
     {
-        feat = await Http.GetFromJsonAsync<Race>($"feats/{Id}.json");
+        feat = await Http.GetFromJsonAsync<FeatData>($"feats/{Id}.json");
     }
 
-    public record Feat(string Name, string Text);
+    public record FeatData(string Name, string Text);
 }
