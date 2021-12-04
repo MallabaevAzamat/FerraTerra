@@ -32,3 +32,11 @@ jobs:
       # меняем '/' на '/FerraTerra/'
     - name: Change base-tag in index.html from / to FerraTerra
       run: sed -i 's/<base href="\/" \/>/<base href="\/FerraTerra\/" \/>/g' release/wwwroot/index.html
+      
+      # отключаем jekyll
+    - name: Add .nojekyll file
+      run: touch release/wwwroot/.nojekyll
+      
+      # копируем index.html в 404.html
+    - name: copy index.html to 404.html
+      run: cp release/wwwroot/index.html release/wwwroot/404.html
