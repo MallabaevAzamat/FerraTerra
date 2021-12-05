@@ -1,4 +1,7 @@
 {
     "Text": "",
-    "Names": ["android"]
+    "Names":
+    {
+        "android": "Андроид"
+    }
 }

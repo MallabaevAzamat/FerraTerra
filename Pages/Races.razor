@@ -12,8 +12,8 @@
     <ul>
         @foreach (var name in races.Names)
         {
-            <a href="/race/@name">
-                @await (Http.GetFromJsonAsync<Race>($"races/{name}.json")?.Name)
+            <a href="/race/@name.Key">
+                @name.Value
             </a>
         }
     </ul>
@@ -27,6 +27,5 @@
         races = await Http.GetFromJsonAsync<RacesData>("races.json");
     }
 
-    public record RacesData(string Text, string[] Names);
-    public record Race(string Name);
+    public record RacesData(string Text, Dictionary<string, string> Races);
 }

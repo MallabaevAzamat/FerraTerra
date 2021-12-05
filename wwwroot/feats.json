@@ -1,4 +1,7 @@
 {
     "Text": "",
-    "Names": ["nanite-integration"]
+    "Names":
+    {
+        "nanite-integration": "Интегрированные наниты"
+    }
 }

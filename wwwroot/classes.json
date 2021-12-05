@@ -1,4 +1,7 @@
 {
     "Text": "",
-    "Names": ["nanocyte"]
+    "Names":
+    {
+        "nanocyte": "Наноцит"
+    }
 }
