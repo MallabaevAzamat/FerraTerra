@@ -33,15 +33,15 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-A2q3rWErDo4JeHPTiaLfscMcpWnMma2TF7PvBeEwVRg=",
+      "hash": "sha256-78rwXwnxZVe\/YflWmOTS13SCeF5n459yzqdMuGmfnRc=",
       "url": "_framework\/blazor.boot.json"
     },
     {
-      "hash": "sha256-GnyRDAHKYmQDZSVHGTQik5gC6J\/169ep\/yBYB7zTPq0=",
+      "hash": "sha256-cJRBDAZ0X1dR\/VNRhfZS\/PzFKxTZLvlsOrpBUb6k0RM=",
       "url": "_framework\/FerraTerra.dll"
     },
     {
-      "hash": "sha256-OfPNI7UCQFv8hh2XtlZYzY7d9FFHfPRrmnF6aeXeork=",
+      "hash": "sha256-6+mrUcoFFaBepCFwC7lBmaouZKPkFvehFp9BQrASs20=",
       "url": "_framework\/Microsoft.AspNetCore.Components.dll"
     },
     {
@@ -125,7 +125,7 @@
       "url": "_framework\/System.Net.Primitives.dll"
     },
     {
-      "hash": "sha256-so68\/oO2HTTgK+PuBM4FI0eboEKojuIetSdvmo0Ww1Q=",
+      "hash": "sha256-T9NOsxhdpYFbyhAbpuq\/zwnU9aW3f2uEktPxGY18XLU=",
       "url": "_framework\/System.Private.CoreLib.dll"
     },
     {
@@ -141,7 +141,7 @@
       "url": "_framework\/System.Runtime.CompilerServices.Unsafe.dll"
     },
     {
-      "hash": "sha256-lqDeIcZPXzgmxjSUEUKA5SgzjlSxTjkTeKurqjZ4dcA=",
+      "hash": "sha256-e2FTDVSTRfhj4gs3NrBR1b+Dy\/rNIRh8JXFnzgpuRSo=",
       "url": "_framework\/System.Runtime.dll"
     },
     {
@@ -247,11 +247,7 @@
     {
       "hash": "sha256-VV1r9QNmggfclC4TWUNmtN4ztxrGhXETbruHgrkrG2Q=",
       "url": "races\/android.json"
-    },
-    {
-      "hash": "sha256-4Yh4OTT5TEAPNyXEzOG+n5l2HPK294WFItz4SIelj88=",
-      "url": "sample-data\/weather.json"
     }
   ],
-  "version": "yrlH0MeH"
+  "version": "dFgEVgev"
 };
