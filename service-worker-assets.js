@@ -33,11 +33,11 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-dS80JQWSvwHhWn4DdPPesGYpYRH2wmlR+WC\/UmgNOs4=",
+      "hash": "sha256-A2q3rWErDo4JeHPTiaLfscMcpWnMma2TF7PvBeEwVRg=",
       "url": "_framework\/blazor.boot.json"
     },
     {
-      "hash": "sha256-DfdjNX0qrXi4LNn+Av4JQIUxrwrZATUr4ZvHY+sMSuo=",
+      "hash": "sha256-GnyRDAHKYmQDZSVHGTQik5gC6J\/169ep\/yBYB7zTPq0=",
       "url": "_framework\/FerraTerra.dll"
     },
     {
@@ -253,5 +253,5 @@
       "url": "sample-data\/weather.json"
     }
   ],
-  "version": "KqHYHpiR"
+  "version": "yrlH0MeH"
 };
