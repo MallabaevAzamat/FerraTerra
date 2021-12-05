@@ -10,10 +10,10 @@
         @feats.Text
     </section>
     <ul>
-        @foreach (var name in feats.Names)
+        @foreach (var item in feats.Items)
         {
-            <a href="/feat/@name">
-                @name.Value
+            <a href="/feat/@item.Key">
+                @item.Value
             </a>
         }
     </ul>
@@ -27,5 +27,5 @@
         feats = await Http.GetFromJsonAsync<FeatsData>("feats.json");
     }
 
-    public record FeatsData(string Text, Dictionary<string, string> Races);
+    public record FeatsData(string Text, Dictionary<string, string> Items);
 }

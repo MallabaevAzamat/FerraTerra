@@ -10,10 +10,10 @@
         @classes.Text
     </section>
     <ul>
-        @foreach (var name in classes.Names)
+        @foreach (var item in classes.Items)
         {
-            <a href="/class/@name.Key">
-                @name.Value
+            <a href="/class/@item.Key">
+                @item.Value
             </a>
         }
     </ul>
@@ -27,5 +27,5 @@
         classes = await Http.GetFromJsonAsync<ClassesData>("classes.json");
     }
 
-    public record ClassesData(string Text, Dictionary<string, string> Races);
+    public record ClassesData(string Text, Dictionary<string, string> Items);
 }
