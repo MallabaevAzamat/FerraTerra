@@ -27,5 +27,5 @@
         feats = await Http.GetFromJsonAsync<FeatsData>("feats.json");
     }
 
-    public record FeatsData(string Text, Dict<string, string> Races);
+    public record FeatsData(string Text, Dictionary<string, string> Races);
 }
