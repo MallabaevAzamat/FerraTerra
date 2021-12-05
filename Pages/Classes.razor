@@ -1,9 +1,9 @@
 @page "/classes"
 @inject HttpClient Http
 
-<PageTitle>Классы - FerraTerra</PageTitle>
+<PageTitle>Классы</PageTitle>
 
-<h1>Классы - FerraTerra</h1>
+<h1>Классы</h1>
 
 @if(classes != null) {
     <section>
@@ -17,6 +17,8 @@
             </a>
         }
     </ul>
+} else {
+    <p role="alert">Извините, данная страница недоступна.</p>
 }
 
 @code{

@@ -1,9 +1,9 @@
 @page "/races"
 @inject HttpClient Http
 
-<PageTitle>Расы - FerraTerra</PageTitle>
+<PageTitle>Расы</PageTitle>
 
-<h1>Расы - FerraTerra</h1>
+<h1>Расы</h1>
 
 @if(races != null) {
     <section>
@@ -17,6 +17,8 @@
             </a>
         }
     </ul>
+} else {
+    <p role="alert">Извините, данная страница недоступна.</p>
 }
 
 @code{
