@@ -33,11 +33,11 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-mZO+gvSx+gb9fzILVuFyCS9VGiXUmaP0B9II\/CkEsqg=",
+      "hash": "sha256-dS80JQWSvwHhWn4DdPPesGYpYRH2wmlR+WC\/UmgNOs4=",
       "url": "_framework\/blazor.boot.json"
     },
     {
-      "hash": "sha256-RKZ0bFCMeSEX0t\/LhFaXdNn02Pw7\/VgnEmuZEiCzoNQ=",
+      "hash": "sha256-DfdjNX0qrXi4LNn+Av4JQIUxrwrZATUr4ZvHY+sMSuo=",
       "url": "_framework\/FerraTerra.dll"
     },
     {
@@ -101,7 +101,7 @@
       "url": "_framework\/System.Collections.Concurrent.dll"
     },
     {
-      "hash": "sha256-XGBWB\/Ko\/6unXi+sBNIrmHXWNxdzVsGWJ3lK5foO1n0=",
+      "hash": "sha256-0AK06lKh2Qc\/hzz9b5Yvm4WgTPJ8ml\/E4DjxQhdQLfs=",
       "url": "_framework\/System.Collections.dll"
     },
     {
@@ -125,7 +125,7 @@
       "url": "_framework\/System.Net.Primitives.dll"
     },
     {
-      "hash": "sha256-DPJgk6VLp6Xt7gcVSxtwBiK+o+Tpuv6UGteBQX0e9yw=",
+      "hash": "sha256-so68\/oO2HTTgK+PuBM4FI0eboEKojuIetSdvmo0Ww1Q=",
       "url": "_framework\/System.Private.CoreLib.dll"
     },
     {
@@ -141,7 +141,7 @@
       "url": "_framework\/System.Runtime.CompilerServices.Unsafe.dll"
     },
     {
-      "hash": "sha256-BLGr4+B2pk6+jM6E2khjsOI4z6v4fTX5At0R3sEbUe0=",
+      "hash": "sha256-lqDeIcZPXzgmxjSUEUKA5SgzjlSxTjkTeKurqjZ4dcA=",
       "url": "_framework\/System.Runtime.dll"
     },
     {
@@ -155,6 +155,14 @@
     {
       "hash": "sha256-4m37UmtQrGE+uOajEwz1Po8bMVoitFNlHLtK9fYYjCE=",
       "url": "FerraTerra.styles.css"
+    },
+    {
+      "hash": "sha256-4\/kxI2jsqW1zBTfdGINBqr5jvdwUd8YCGJVVheji3Zs=",
+      "url": "classes.json"
+    },
+    {
+      "hash": "sha256-Y6c35InnOX9tnVDzM5FdShf0u5VRFR1CalqiiQ485E4=",
+      "url": "classes\/nanocyte.json"
     },
     {
       "hash": "sha256-kfXT+\/7PwnK7UBTMq8\/AX20+soj7u1sV\/U1lCtnmSZI=",
@@ -209,6 +217,14 @@
       "url": "favicon.ico"
     },
     {
+      "hash": "sha256-2lz7cuVjfOS1gYnO\/OTJIUZS+S1KPey4UAK\/BZ4VMec=",
+      "url": "feats.json"
+    },
+    {
+      "hash": "sha256-5CeeeHHcBwX+5R1CPRVPISW5qJKy+e+7Y3G8pUCJZlo=",
+      "url": "feats\/nanite-integration.json"
+    },
+    {
       "hash": "sha256-DbpQaq68ZSb5IoPosBErM1QWBfsbTxpJqhU0REi6wP4=",
       "url": "icon-192.png"
     },
@@ -225,9 +241,17 @@
       "url": "manifest.json"
     },
     {
+      "hash": "sha256-3HowOmusCeOEDTODIGBPWpgBWZbG7vLS8htVmaWm3nc=",
+      "url": "races.json"
+    },
+    {
+      "hash": "sha256-VV1r9QNmggfclC4TWUNmtN4ztxrGhXETbruHgrkrG2Q=",
+      "url": "races\/android.json"
+    },
+    {
       "hash": "sha256-4Yh4OTT5TEAPNyXEzOG+n5l2HPK294WFItz4SIelj88=",
       "url": "sample-data\/weather.json"
     }
   ],
-  "version": "iWOULd1C"
+  "version": "KqHYHpiR"
 };
