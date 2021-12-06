@@ -23,7 +23,18 @@
         <a class="dismiss">🗙</a>
     </div>
     <script src="_framework/blazor.webassembly.js"></script>
-    <script>navigator.serviceWorker.register('service-worker.js');</script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('service-worker.js')
+            .then((reg) => {
+                // регистрация сработала
+                console.log('Hегистрация выполнена. Вот: ' + reg.scope);
+            }).catch((error) => {
+                // регистрация прошла неудачно
+                console.log('Регистрация провалилась. Ошибка: ' + error);
+            });
+        }
+    </script>
 </body>
 
 </html>
