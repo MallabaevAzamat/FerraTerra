@@ -161,7 +161,7 @@
       "url": "classes.json"
     },
     {
-      "hash": "sha256-Y6c35InnOX9tnVDzM5FdShf0u5VRFR1CalqiiQ485E4=",
+      "hash": "sha256-R1pmcOfw7U5TK\/fK24vqKXdtYKe4DjUdhHp64gzSrkA=",
       "url": "classes\/nanocyte.json"
     },
     {
@@ -249,5 +249,5 @@
       "url": "races\/android.json"
     }
   ],
-  "version": "scDIdca9"
+  "version": "RoqU7+nD"
 };
