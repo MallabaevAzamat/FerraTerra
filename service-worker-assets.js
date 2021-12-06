@@ -233,7 +233,7 @@
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-QSqIIhr4IGjNK96C7BElZFpdxwYpYF4I6GwD10+oP28=",
+      "hash": "sha256-2D8F3r13cOlBTBG6cFZgSiJli+uF1OAwRBb0SGtdtxs=",
       "url": "index.html"
     },
     {
@@ -249,5 +249,5 @@
       "url": "races\/android.json"
     }
   ],
-  "version": "N9JJpDt4"
+  "version": "EkOR9CIY"
 };
