@@ -7,7 +7,7 @@
   "linkerEnabled": true,
   "resources": {
     "assembly": {
-      "FerraTerra.dll": "sha256-wfFUJ8Hg6Tyy0vBdTbMsSFYKmXIG\/YsyBStv1nmHG7I=",
+      "FerraTerra.dll": "sha256-WtaJj4otQRjBGAvOwduKhdwq6ayxyYFbXEOV5oPgkxI=",
       "Microsoft.AspNetCore.Components.dll": "sha256-6+mrUcoFFaBepCFwC7lBmaouZKPkFvehFp9BQrASs20=",
       "Microsoft.AspNetCore.Components.Web.dll": "sha256-LxZ7HJ8eLJ8fbfDHpXkGb9VhtdUfHxfLq7a9SmRxCiM=",
       "Microsoft.AspNetCore.Components.WebAssembly.dll": "sha256-Ph2ZOl\/LOY2cCUG\/S2iA61YUWIsDlcAHFxzdTG43rPw=",
