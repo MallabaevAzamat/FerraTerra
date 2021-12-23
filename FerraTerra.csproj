@@ -13,11 +13,8 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <ServiceWorkerAssetsManifest>service-worker-assets.js</ServiceWorkerAssetsManifest>
-<<<<<<< HEAD
     <RunAOTCompilation>true</RunAOTCompilation>
-=======
     <ApplicationIcon>wwwroot\favicon.ico</ApplicationIcon>
->>>>>>> fbb1c1b3878483a63d7da8209707ccf171f0086d
   </PropertyGroup>
 
   <ItemGroup>
