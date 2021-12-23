@@ -18,6 +18,9 @@ jobs:
       with:
         dotnet-version: '6.0.x'
         include-prerelease: true
+      
+    - name: Load wasm aot
+      run: dotnet workload install wasm-tools
         
       # генерируем статические файлы
     - name: Publish .NET Core Project
