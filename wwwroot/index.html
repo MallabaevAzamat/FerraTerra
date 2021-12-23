@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="utf-8" />
@@ -15,15 +15,26 @@
 </head>
 
 <body>
-    <div id="app">Loading...</div>
+    <div id="app">Загрузка...</div>
 
     <div id="blazor-error-ui">
-        An unhandled error has occurred.
-        <a href="" class="reload">Reload</a>
+        Извините, что-то пошло не так...
+        <a href="" class="reload">Перезагрузить</a>
         <a class="dismiss">🗙</a>
     </div>
     <script src="_framework/blazor.webassembly.js"></script>
-    <script>navigator.serviceWorker.register('service-worker.js');</script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('service-worker.js')
+            .then((reg) => {
+                // регистрация сработала
+                console.log('Регистрация выполнена. Вот: ' + reg.scope);
+            }).catch((error) => {
+                // регистрация прошла неудачно
+                console.log('Регистрация провалилась. Ошибка: ' + error);
+            });
+        }
+    </script>
 </body>
 
 </html>
